@@ -18,7 +18,8 @@ while True:
     cv2.imshow("Frame",frame)
 
     if cv2.waitKey(0) == ord('q'):
-        sys.exit()
+        sys.exit() #It waits until the q is pressed to shutdown the camera
 
-video.release()
-cv2.destroyAllWindows()
+
+video.release() #release the camera to set it free, so all other applications can use it
+cv2.destroyAllWindows() #Destroying all teh windows created by CV, so that there is no obstruction for other applications to use it 
