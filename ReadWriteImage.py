@@ -8,4 +8,7 @@ if img is None:
     sys.exit("Image is not present")
 
 cv2.imshow("Window", img)
-cv2.waitKey(0)
+k = cv2.waitKey(0)
+
+if k == ord("s"):
+    cv2.imwrite("Apple.png",img)
